@@ -1,25 +1,24 @@
 body{
-    /* Cambia el tipo de letra*/
+    /*Es la fuente de texto que va a tener la página web*/
     font-family: Arial, Helvetica, sans-serif;
-    /* Cambia el color del fondo */
+    /*Es el color del fondo de la pantalla*/
     background-color: #e6f7ff;
-    /* Cambia el color del texto */
+    /*Es el color del texto*/
     color: #333;
-    /* Espaciado de texto */
+    /*Interlineado*/
     line-height: 1.6;
-    /* Espacio después del borde */
+    /*Margin es lo que está por fuera del border*/
     margin: 0;
-    /* Espacio antes del borde */
+    /*Margin es lo que está por dentro del border*/
     padding: 0;
 }
 
 header{
     background-color: #0073e6;
     color: white;
-    padding: 0;
-    /* Centrar el texto */
-    text-align: center;
-}
+    padding: 20px;
+    text-align:center;
+} 
 
 h1{
     margin: 0;
@@ -27,26 +26,22 @@ h1{
 
 main{
     padding: 20px;
+    /*Margin es lo que está por fuera del border en la parte de abajo*/
     margin-bottom: 60px;
 }
 
 section{
     background-color: #ffffff;
-    /* Redondea los extremos */
-    border-radius: 20px;
+    /*Borde circular*/
+    border-radius: 8px;
     padding: 15px;
     margin-bottom: 20px;
-    /* Sombreado del espacio */
-    box-shadow: 0 4px 8px 0 rgb(8, 15, 65, 0.3);
+    /*Sombreado*/
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
 h2{
     color: #0073e6;
-}
-
-ol{
-    /* Divide la lista en números */
-    list-style-type: decimal;
 }
 
 footer{
@@ -54,23 +49,32 @@ footer{
     color: white;
     text-align: center;
     padding: 10px;
+    position: fixed;
     bottom: 0;
     width: 100%;
 }
 
-img{
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
-    /* Toma la imagen como bloque */
-    display: block;
-    margin: 10px auto;
-}
-
 .correo{
     color: white;
+    text-decoration: none;
 }
 
-a{
-    text-decoration: none;
+.flex-container{
+    display: flex;
+    flex-direction: row;
+    /*El mismo espacio al rededor del elemento*/
+    justify-content: space-around;
+    /*Espacio (gutter) entre los elementos flexibles*/
+    gap: 20px;
+}
+
+.flex-item{
+    flex: 1;
+    min-width: 250px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    text-align: center;
 }
